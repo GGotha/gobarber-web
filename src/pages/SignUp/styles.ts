@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import signInBackground from '../../assets/sign-in-background.png';
+import signUpBackground from '../../assets/create_account.png';
 
 export const Container = styled.div`
   height: 100vh;
@@ -42,7 +42,7 @@ export const Content = styled.div`
     }
   }
   > a {
-    color: #ff9000;
+    color: #f4ede8;
 
     text-decoration: none;
     transition: color 0.2s;
@@ -52,7 +52,7 @@ export const Content = styled.div`
     transition: color 0.2s;
 
     &:hover {
-      color: ${shade(0.2, '#ff9000')};
+      color: ${shade(0.2, '#F4EDE8')};
     }
 
     svg {
@@ -63,6 +63,6 @@ export const Content = styled.div`
 
 export const Background = styled.div`
   flex: 1;
-  background: url(${signInBackground}) no-repeat center;
+  background: url(${signUpBackground}) no-repeat center;
   background-size: cover;
 `;
